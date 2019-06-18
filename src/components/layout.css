@@ -7,10 +7,12 @@
 :root {
     --mainOrange: #f15025;
     --mainWhite: #fafafa;
+    --mainBlack: #232526;
+    --mainBlue: #004e92;
 }
 
 body {
     font-family: 'Righteous', cursive;
-    color: var(--mainWhite);
-    background: var(--mainOrange);
+    color: var(--mainBlack);
+    background: var(--mainWhite);
 }
