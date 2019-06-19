@@ -18,17 +18,20 @@ class NavBar extends Component {
 
   render() {
     return (
-      <nav>
+      <NavWrapper>
         <NavHeader handleNavBar={this.handleNavBar} />
         <NavLinks navBarOpen={this.state.navBarOpen} />
         <NavIcon />
-      </nav>
+      </NavWrapper>
     )
   }
 }
 
-const navWrapper = styled.div `
-
+const NavWrapper = styled.nav `
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 `
 
 export default NavBar
