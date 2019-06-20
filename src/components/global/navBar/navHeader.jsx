@@ -13,7 +13,7 @@ class NavHeader extends Component {
     return (
       <HeaderWrapper>
         <Link to='/'>
-          <img src={logo} alt='Company Name' />
+          <img className='logo' src={logo} alt='Company Name' />
         </Link>
 
         <FaAlignRight
@@ -38,6 +38,11 @@ const HeaderWrapper = styled.div `
     color: ${styles.colors.mainYellow};
     cursor: pointer;
   }
+  
+  //.logo {
+  //  height: 38px;
+  //  width: 149px;
+  //}
   
   @media (min-width: 768px) {
     .toggle-icon {
